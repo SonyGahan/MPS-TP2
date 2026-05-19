@@ -10,10 +10,10 @@ public class ProductManagerTests
     {
         // 1- Configuracion previa
         ProductManager manager = new ProductManager();
-        Producto nuevoProducto = new Producto(1, "Mouse", 1500.0, ProductCategory.Electronica);
+        Product nuevoProducto = new Product(1, "Mouse", 1500.0, ProductCategory.Electronica);
 
         // 2- Ejecucion del metodo a probar
-        manager.AddProduct(nuevoProducto);
+        manager.addProduct(nuevoProducto);
 
         // 3- Verificar la salida: Cuantos y cuales elementos se incorporaron a la lista de productos
         Assert.That(manager.Productos.Count, Is.EqualTo(1));
@@ -27,10 +27,10 @@ public class ProductManagerTests
         // 1- Configuracion previa
         ProductManager manager = new ProductManager();
         double precioOriginal = 1000.0;
-        Producto prodElectronica = new Producto(1, "Monitor", precioOriginal, ProductCategory.Electronica);
+        Product prodElectronica = new Product(1, "Monitor", precioOriginal, ProductCategory.Electronica);
 
         // 2- Ejecucion del metodo a probar
-        double resultado = manager.CalculateTotalPrice(prodElectronica);
+        double resultado = manager.calculateTotalPrice(prodElectronica);
 
          // 3- Verificar la salida: Verificar que el impuesto aplicado sea el correcto para la caterogia Electronica.
         double precioEsperado = 1100.0;
@@ -43,10 +43,10 @@ public class ProductManagerTests
         // 1- Configuracion previa
         ProductManager manager = new ProductManager();
         double precioOriginal = 1000.0;
-        Producto prodAlimento = new Producto(2, "Arroz", precioOriginal, ProductCategory.Alimentos);
+        Product prodAlimento = new Product(2, "Arroz", precioOriginal, ProductCategory.Alimentos);
 
         // 2- Ejecucion del metodo a probar
-        double resultado = manager.CalculateTotalPrice(prodAlimento);
+        double resultado = manager.calculateTotalPrice(prodAlimento);
 
         // 3- Verificar la salida: Verificar que el impuesto aplicado sea el correcto para la caterogia Alimentos.
         double precioEsperado = 1050.0;

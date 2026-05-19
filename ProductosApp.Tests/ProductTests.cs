@@ -14,12 +14,12 @@ public class ProductTests
         double expectedPrecio = 5000.0;
         ProductCategory expectedCategoria = ProductCategory.Electronica;
 
-        Producto producto = new Producto(expectedId, expectedNombre, expectedPrecio, expectedCategoria);
+        Product producto = new Product(expectedId, expectedNombre, expectedPrecio, expectedCategoria);
 
-        Assert.That(producto.IdProducto, Is.EqualTo(expectedId));
-        Assert.That(producto.Nombre, Is.EqualTo(expectedNombre));
-        Assert.That(producto.Precio, Is.EqualTo(expectedPrecio));
-        Assert.That(producto.Categoria, Is.EqualTo(expectedCategoria));
+        Assert.That(producto.id, Is.EqualTo(expectedId));
+        Assert.That(producto.name, Is.EqualTo(expectedNombre));
+        Assert.That(producto.price, Is.EqualTo(expectedPrecio));
+        Assert.That(producto.category, Is.EqualTo(expectedCategoria));
     }
 
     //Camino negativo - Se prueba que el contructor lance una excepción cuando se intenta crear un producto con precio negativo.
@@ -34,7 +34,7 @@ public class ProductTests
        
         Assert.Throws<System.ArgumentException>(() =>
         {
-            Producto producto = new Producto(validId, validNombre, invalidPrecio, validCategoria);
+            Product producto = new Product(validId, validNombre, invalidPrecio, validCategoria);
         });
     }
 }

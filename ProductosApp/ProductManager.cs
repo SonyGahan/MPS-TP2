@@ -4,39 +4,39 @@ namespace ProductosApp;
 
 public class ProductManager
 {
-    public List<Producto> Productos { get; private set; }
+    public List<Product> Productos { get; private set; }
 
     // Constructor vacio para inicializar la lista de produtos
     public ProductManager()
     {
-        Productos = new List<Producto>();
+        Productos = new List<Product>();
     }
 
     // Método para agregar un producto a la lista
-    public void AddProduct(Producto producto)
+    public void addProduct(Product product)
     {
-        Productos.Add(producto);
+        Productos.Add(product);
     }
 
     //Método para buscar un producto de la lista
-    public Producto? FindProductByName(string nombreBuscado)
+    public Product? findProductByName(string name)
     {
-        if (string.IsNullOrWhiteSpace(nombreBuscado))
-            throw new ArgumentException("El nombre del producto no puede estar vacío", nameof(nombreBuscado));
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("El nombre del producto no puede estar vacío", nameof(name));
 
-        return Productos.Find(p => p.Nombre == nombreBuscado);
+        return Productos.Find(p => p.name == name);
     }
 
     // Método para calcular el precio total con impuestos
-    public double CalculateTotalPrice(Producto producto)
+    public double calculateTotalPrice(Product producto)
     {
-        if (producto.Categoria == ProductCategory.Electronica)
+        if (producto.category == ProductCategory.Electronica)
         {
-            return producto.Precio * 1.10;
+            return producto.price * 1.10;
         }
-        else if (producto.Categoria == ProductCategory.Alimentos)
+        else if (producto.category == ProductCategory.Alimentos)
         {
-            return producto.Precio * 1.05;
+            return producto.price * 1.05;
         }
         else
         {
