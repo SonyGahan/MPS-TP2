@@ -1,0 +1,11 @@
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\bin\Debug\net10.0\ProductosApp.deps.json
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\bin\Debug\net10.0\ProductosApp.dll
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\bin\Debug\net10.0\ProductosApp.pdb
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ProductosApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ProductosApp.AssemblyInfoInputs.cache
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ProductosApp.AssemblyInfo.cs
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ProductosApp.csproj.CoreCompileInputs.cache
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ProductosApp.dll
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\refint\ProductosApp.dll
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ProductosApp.pdb
+C:\DiseñoWeb\13- Tester\SistemaProductos_PFO2\ProductosApp\obj\Debug\net10.0\ref\ProductosApp.dll
